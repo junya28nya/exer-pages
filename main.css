@@ -1,55 +1,77 @@
-body {
-    margin: 0;
-    padding: 0;
-  }
- 
-  #box {
+html, body {
+    position: relative;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+#a1 {
+    position: relative;
+    height: 50px;
     width: 100%;
-    height: 100vh;
-    background:black;
-    font-size: 100px;
-    /*display: flex;
-    /*align-items: center; /* 縦方向中央揃え */
-    /*justify-content: center; /* 横方向中央揃え */
-    /*flex-direction: column;*/
-  }
-  #a1{
-      background: white;
-      width: 50%;
-      height:50%;
-      margin: 0 auto;
-  }
-  #a2{
-    background: gray;
+    background: white;
+}
+#a2{
+    position: relative;
+    height:  50px;
+    width: 100%;
+    background: white;
+}
+#board{
+    background: black;
     width: 50%;
-    height:50%;
-    margin: 0 auto 0 auto;
-    }
-  #board{
-      background: black;
-      width:50%;
-/*
-padding-top: 25%;
-*/
-      height: 50%;
-      margin: 0px auto 0 auto;
-      border-radius: 10px 10px 10px 10px;
-      
-      }
+    height: 100%;
+    border-radius: 30px 30px 0 0;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%,0%);
+    border: solid 5px black;
+}
+.space_side{
+    width: 8%;
+    height: 10%;
+    float: left;
+}
+.output{
+    background: white;
+    width: 12%;
+    height: 80%;
+    float: left;
+}
+.space_interval{
+    width: 12%;
+    height: 10%;
+    float:left;
+}
+.zoom{
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+}
+.zoomButton{
+    background: gray;
+    display: block;
+    width:40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: 20px;
+    color: white;
+    margin-top: 10px;
+    text-align:center;
+    line-height: 40px;
+}
 
-  .space_side{
-      width: 8%;
-      height: 10%;
-      float:left;
-  }
-  .output{
-      background: white;
-      width: 12%;
-      height: 80%;
-      float:left;
-    }
-  .space_interval{
-      width: 12%;
-      height: 10%;
-      float:left;
-    }
+.lightButton{
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    background: gray;
+    color: #FFF;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    border-radius: 50%;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+}
